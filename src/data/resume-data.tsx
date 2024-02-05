@@ -23,6 +23,7 @@ export const RESUME_DATA = {
   name: "Shariq Nadeem Malik",
   initials: "SNM",
   location: "Abu Dhabi, UAE",
+  locationLink: "https://en.wikipedia.org/wiki/Abu_Dhabi",
   about:
     "Aspiring Data Scientist",
   summary:
