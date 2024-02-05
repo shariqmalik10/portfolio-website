@@ -1,4 +1,6 @@
-# Minimalist CV [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBartoszJarocki%2Fcv)
+# Minimalist CV 
+
+Preview: [Click here to view website](https://shariq.vercel.app)
 
 Simple web app that renders minimalist CV with print-friendly layout.
 
@@ -63,3 +65,6 @@ docker compose down
 # License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+#Citation 
+The minimalist cv idea has been referred from : [BartoszJarocki](https://github.com/BartoszJarocki/cv)
