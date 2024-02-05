@@ -54,7 +54,7 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Monash University",
-      degree: "Bachelors of Computer Science in Data Science",
+      degree: "Bachelor of Computer Science in Data Science",
       start: "2020",
       end: "2023",
     },
@@ -63,7 +63,7 @@ export const RESUME_DATA = {
     {
       company: "Senang Insurance",
       link: "https://senang.io",
-      badges: ["On-Site"],
+      badges: ["On-Site", "Malaysia"],
       title: "Software Developer Intern",
       start: "Nov 2022",
       end: "Feb 2023",
@@ -73,7 +73,7 @@ export const RESUME_DATA = {
     {
       company: "Monash University",
       link: "https://www.monash.edu.my",
-      badges: ["On-Site"],
+      badges: ["On-Site", "Malaysia"],
       title: "Research Assistant",
       start: "Sep 2023",
       end: "Feb 2024",
