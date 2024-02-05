@@ -29,6 +29,7 @@ export const RESUME_DATA = {
   summary:
     "Recently graduated from Monash University with a Bachelor's degree in Computer Science and seeking opportunities to advance my learning in data analysis.I am very enthusiastic about data science as well as working on the development and research in new technologies in specific fields such as computer vision. I have worked with R, Tableau, Python and JavaScript frameworks such as NodeJS and AngularJS. Open to positions in software or data science !",
   avatarUrl: "../images/photo.jpeg",
+  personalWebsiteUrl: "",
   contact: {
     email: "shariqnadeem21@hotmail.com",
     tel: "+971543791278",
