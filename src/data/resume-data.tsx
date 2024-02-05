@@ -127,8 +127,19 @@ export const RESUME_DATA = {
         "Created a website making API calls to retrieve information based on user searches.",
       logo: JarockiMeLogo,
       link: {
+        label: "",
+        href: "https://github.com/shariqmalik10/Manga-Website",
+      },
+    },
+    {
+      title: "Covid-19 Data Visualization",
+      techStack: ["Course Work", "HTML", "CSS", "JavaScript", "VegaLite"],
+      description:
+        "Created charts using VegaLite to display COVID-19 statistics and how countries fared against it",
+      logo: JarockiMeLogo,
+      link: {
         label: "github.com",
-        href: "https://jarocki.me/",
+        href: "https://shariqmalik10.github.io/Covid-19-Visualization/",
       },
     },
   ],
