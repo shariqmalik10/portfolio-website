@@ -71,6 +71,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Monash University",
+      link: "https://www.monash.edu.my",
       badges: ["On-Site"],
       title: "Research Assistant",
       start: "Sep 2023",
