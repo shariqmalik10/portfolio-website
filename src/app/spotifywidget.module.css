@@ -1,0 +1,119 @@
+/* components/SpotifyWidget.module.css */
+.widgetContainer {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .toggleButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #1DB954;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .content {
+    background: #181818;
+    color: white;
+    width: 300px;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  .nowPlaying, .recommendations {
+    margin-bottom: 20px;
+  }
+  
+  .trackInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .recItem {
+    background: #282828;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .reason {
+    color: #b3b3b3;
+    font-size: 0.9em;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Animation styles */
+.skeletonContainer {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1 }
+  50% { opacity: 0.5 }
+}
+
+.skeletonImage {
+  width: 64px;
+  height: 64px;
+  background: #282828;
+  border-radius: 4px;
+}
+
+.skeletonText {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.skeletonLine {
+  height: 20px;
+  background: #282828;
+  margin-bottom: 8px;
+  width: 80%;
+  border-radius: 4px;
+}
+
+.skeletonLineShort {
+  height: 16px;
+  background: #282828;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.recommendationsSkeleton {
+  margin-top: 20px;
+}
+
+/* Recommendation error styling */
+.recommendationError {
+  background: #2d2d2d;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #ff4444;
+}
+
+.recommendationError p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ff8888;
+}
+
+.cachedBadge {
+  font-size: 0.8em;
+  color: #888;
+  font-weight: normal;
+  margin-left: 8px;
+}
