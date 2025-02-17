@@ -29,12 +29,23 @@ let tokenExpiration: number = 0;
 // }
 
 // lib/spotify.ts
-let tokenData = {
+interface TokenData {
+  accessToken: string | null;
+  expirationTime: number;
+}
+
+interface SpotifyTokenResponse {
+  access_token: string;
+  expires_in: number;
+  token_type: string;
+}
+
+let tokenData: TokenData = {
   accessToken: null,
   expirationTime: 0
 };
 
-export async function getAccessToken() {
+export async function getAccessToken(): Promise<string | null> {
   // Force new token if current one is expired or will expire soon
   if (!tokenData.accessToken || Date.now() >= tokenData.expirationTime) {
     console.log('Getting new access token...');
@@ -49,19 +60,20 @@ export async function getAccessToken() {
       },
       body: new URLSearchParams({
         grant_type: 'refresh_token',
-        refresh_token: process.env.SPOTIFY_REFRESH_TOKEN!
+        refresh_token: process.env.SPOTIFY_REFRESH_TOKEN ?? ''
       })
     });
 
     if (!response.ok) {
-      throw new Error(`Failed to refresh token: ${response.status}`);
+      const errorText = await response.text();
+      throw new Error(`Failed to refresh token: ${response.status} ${errorText}`);
     }
 
-    const data = await response.json();
+    const data = await response.json() as SpotifyTokenResponse;
     
     tokenData = {
       accessToken: data.access_token,
-      expirationTime: Date.now() + (data.expires_in * 1000) - 5000
+      expirationTime: Date.now() + (data.expires_in * 1000) - 5000 // 5 second buffer
     };
     
     console.log('New token expires in:', data.expires_in, 'seconds');

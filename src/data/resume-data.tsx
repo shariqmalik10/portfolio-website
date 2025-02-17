@@ -25,9 +25,9 @@ export const RESUME_DATA = {
   location: "Abu Dhabi, UAE",
   locationLink: "https://en.wikipedia.org/wiki/Abu_Dhabi",
   about:
-    "Aspiring Data Scientist",
+    "Exploring the world of Tech",
   summary:
-    "Recently graduated from Monash University with a Bachelor's degree in Computer Science and seeking opportunities to advance my learning in data analysis.I am very enthusiastic about data science as well as working on the development and research in new technologies in specific fields such as computer vision. I have worked with R, Tableau, Python and JavaScript frameworks such as NodeJS and AngularJS. Open to positions in software or data science !",
+    "Currently exploring the world of data, tinkering around with NextJS and trying to cook up applications that utlizie LLMs to wow people and give them a bit of happpiness and enjoyment :)",
   avatarUrl: "../images/photo.jpeg",
   personalWebsiteUrl: "",
   contact: {
@@ -46,7 +46,7 @@ export const RESUME_DATA = {
       },
       {
         name: "X",
-        url: "https://twitter.com/eliteplayzXD",
+        url: "",
         icon: XIcon,
       },
     ],
@@ -61,6 +61,26 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Karage",
+      link: "https://karage.co/en/home",
+      badges: ["On-Site", "Saudi Arabia"],
+      title: "Data Analyst",
+      start: "Aug 2024",
+      end: "Present",
+      description:
+        "Spearheaded data utilization initiatives for a company serving over 300 clients in KSA, transforming unused data into actionable insights. \nDesigned and implemented a Tableau dashboard, automating data extraction, cleaning, and updating processes using Tableau Prep.",
+    },
+    {
+      company: "Senang Insurance",
+      link: "https://senang.io",
+      badges: ["Remote", "Malaysia"],
+      title: "Software Developer",
+      start: "May 2024",
+      end: "Oct 2024",
+      description:
+        "Developed a pet registration system using FastAPI and ResNet50 model for generating unique pet nose fingerprints, enabling accurate pet identification for insurance claims. \nBuilt a full-stack application with Streamlit frontend and FastAPI backend. \nDeveloped a complete frontend application for a Philippines-based insurance company using SvelteKit, handling the design implementation for the entire flow.",
+    },
+    {
       company: "Senang Insurance",
       link: "https://senang.io",
       badges: ["On-Site", "Malaysia"],
@@ -68,7 +88,7 @@ export const RESUME_DATA = {
       start: "Nov 2022",
       end: "Feb 2023",
       description:
-        "Collaborated with developers to resolve bugs and issues according to a test plan. Prepared test plans to cover vulnerabilities and key features, resulting in identifying and resolving over 50 critical bugs and issues. Worked on data entry in MS Excel and software development process. Developed a prototype employee management system using AngularJS and documented the in-house backend PHP application.",
+        "Collaborated with developers to resolve bugs and issues according to a test plan. \nPrepared test plans to cover vulnerabilities and key features, resulting in identifying and resolving over 50 critical bugs and issues. \nWorked on data entry in MS Excel and software development process. \nDeveloped a prototype employee management system using AngularJS and documented the in-house backend PHP application.",
     },
     {
       company: "Monash University",
@@ -90,7 +110,9 @@ export const RESUME_DATA = {
     "REST API",
     "Python",
     "TensorFlow",
-    "scikit-learn"
+    "scikit-learn",
+    "ETL",
+    "Tableau"
   ],
   projects: [
     {
