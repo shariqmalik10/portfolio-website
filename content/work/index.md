@@ -33,7 +33,7 @@ Related: [[areas/product-engineering|Product engineering]] · [[areas/applied-ml
 **Undergraduate Research Assistant · June 2023—February 2024**
 
 - Researched Neural Radiance Fields with PyTorch for limited-view 3D reconstruction.
-- Evaluated experimental data, model outputs, and reconstruction quality; the supplied resume records a 15% accuracy improvement.
+- Evaluated experimental data, model outputs, and reconstruction quality across limited-view reconstruction experiments.
 
 ## Education
 

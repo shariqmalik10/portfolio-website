@@ -234,8 +234,6 @@ plugins:
     options:
       links:
         GitHub: https://github.com/shariqmalik10
-        LinkedIn: https://www.linkedin.com/in/shariq-malik10/
-        Email: mailto:shariqnadeem21@hotmail.com
     layout:
       position: footer
       priority: 50

@@ -20,9 +20,6 @@ My public work ranges further. I have built [[projects/mouna|a local-first groce
 
 I earned a Bachelor of Computer Science, majoring in Data Science, from Monash University in 2023. Since then I have worked across research, insurance technology, and automotive SaaS. The longer version is in [[work/index|Experience]].
 
-## Leave a note
+## Elsewhere
 
-- [Email](mailto:shariqnadeem21@hotmail.com)
 - [GitHub](https://github.com/shariqmalik10)
-- [LinkedIn](https://www.linkedin.com/in/shariq-malik10/)
-- [Download resume](/assets/shariq-malik-data-engineer-resume.pdf)

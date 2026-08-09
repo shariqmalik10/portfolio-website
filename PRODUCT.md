@@ -16,7 +16,7 @@ This personal site is the durable home for Shariq's experience, public projects,
 
 ## Positioning
 
-Unlike a static resume, the site connects operational data work, applied machine learning, and product craft as a browsable Quartz knowledge garden.
+Unlike a static profile page, the site connects operational data work, applied machine learning, and product craft as a browsable Quartz knowledge garden.
 
 ## Operating Context
 
@@ -25,28 +25,26 @@ The site is authored in Markdown, built with Quartz 5, versioned with Git, and d
 ## Capabilities and Constraints
 
 - Preserve Quartz search, backlinks, responsive reading, and dark mode. Keep graph and explorer data available to Quartz, but do not make those utilities permanent visual furniture.
-- Use only public or resume-supported facts. Employer systems are described without disclosing private implementation details.
-- Publish email, GitHub, and LinkedIn; do not publish the phone number found in an older portfolio repository.
+- Use only supplied or publicly verifiable facts. Employer systems are described without disclosing private implementation details.
+- Publish GitHub only for now. Do not publish an email address, LinkedIn profile, phone number, or downloadable résumé.
 - Hosting uses the existing Vercel-connected portfolio repository at `shariq.vercel.app`.
 
 ## Brand Commitments
 
 - Public name: Shariq Nadeem Malik; concise display name: Shariq Malik.
 - Voice: direct, curious, technically precise, and personable.
-- The explicit visual and structural reference is Jacky Zhao's `jzhao.xyz`: a welcoming personal garden with selected work and multiple exploratory paths, not a conventional one-page resume.
+- The explicit visual and structural reference is Jacky Zhao's `jzhao.xyz`: a welcoming personal garden with selected work and multiple exploratory paths, not a conventional profile page.
 
 ## Evidence on Hand
 
-- Four supplied resume variants in `/Users/shariq/Documents/personal files/`.
 - Public GitHub profile and repositories at `https://github.com/shariqmalik10`.
-- Public LinkedIn profile at `https://www.linkedin.com/in/shariq-malik10/`.
 - Current public work includes Mouna, Signal Atlas, a neural-network learning library, customer-churn prediction, and loan-risk analysis.
-- Private employer work may be summarized from the resumes, but code and proprietary details must not be fabricated.
+- Private employer work may be summarized from supplied evidence, but code and proprietary details must not be fabricated.
 
 ## Product Principles
 
 - Lead with a human welcome and connected interests; let shipped work appear naturally within the garden.
-- Make every claim traceable to a resume or public artifact.
+- Make every claim traceable to supplied evidence or a public artifact.
 - Reward exploration without making basic navigation mysterious.
 - Keep the site useful as both a portfolio today and a growing knowledge garden later.
 

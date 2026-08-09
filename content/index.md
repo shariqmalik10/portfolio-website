@@ -54,4 +54,4 @@ There is more on the [[projects/index|workbench]], including the edges and limit
 
 ---
 
-<p class="garden-elsewhere">You can also find me on <a href="https://github.com/shariqmalik10">GitHub</a>, connect on <a href="https://www.linkedin.com/in/shariq-malik10/">LinkedIn</a>, <a href="mailto:shariqnadeem21@hotmail.com">send an email</a>, or <a href="/assets/shariq-malik-data-engineer-resume.pdf">download my résumé</a>.</p>
+<p class="garden-elsewhere">You can also find me on <a href="https://github.com/shariqmalik10">GitHub</a>.</p>
