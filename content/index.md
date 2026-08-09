@@ -6,11 +6,7 @@ tags:
 ---
 
 <div class="garden-window" aria-hidden="true">
-  <span class="garden-sun"></span>
-  <span class="garden-leaf leaf-one"></span>
-  <span class="garden-leaf leaf-two"></span>
-  <span class="garden-leaf leaf-three"></span>
-  <span class="garden-grid"></span>
+  <canvas class="garden-flower" role="presentation"></canvas>
 </div>
 
 <div class="garden-welcome">Welcome in.</div>
@@ -28,19 +24,20 @@ I care about dependable systems, expressive software, and understanding a tool a
 ## A few paths through the garden
 
 <ul class="garden-paths">
-  <li><a href="/projects"><span>The workbench</span><small>products, data systems, and machine-learning experiments</small></a></li>
-  <li><a href="/notes"><span>The notebook</span><small>ideas about reliability, local-first software, and learning in public</small></a></li>
-  <li><a href="/now"><span>What is growing now</span><small>current work, questions, and side projects</small></a></li>
-  <li><a href="/about"><span>A note about me</span><small>background, values, and ways to say hello</small></a></li>
+  <li class="path-workbench"><a href="/projects"><span>The workbench</span><small>products, data systems, and machine-learning experiments</small></a></li>
+  <li class="path-notebook"><a href="/notes"><span>The notebook</span><small>ideas about reliability, local-first software, and learning in public</small></a></li>
+  <li class="path-now"><a href="/now"><span>What is growing now</span><small>current work, questions, and side projects</small></a></li>
+  <li class="path-about"><a href="/about"><span>A note about me</span><small>background, values, and ways to say hello</small></a></li>
 </ul>
 
 ## Recently tended
 
-<div class="garden-list">
-  <a href="/notes/trustworthy-data"><span><strong>Trust is a data product</strong><small>Why reconciliation and shared definitions are part of the interface.</small></span><time>seedling · Aug 2026</time></a>
-  <a href="/notes/local-first-products"><span><strong>Local-first changes the shape of a product</strong><small>What Mouna taught me about evidence, ownership, and quiet software.</small></span><time>seedling · Aug 2026</time></a>
-  <a href="/projects/signal-atlas"><span><strong>Signal Atlas</strong><small>365 design-engineering resources, arranged around intent.</small></span><time>project · 2026</time></a>
-</div>
+<ul class="garden-list">
+  <li><a href="/notes/tiny-signals"><span><strong>A small note about tiny signals</strong><small>A sample field note about noticing the quiet feedback inside a system.</small></span><time>sample · Aug 2026</time></a></li>
+  <li><a href="/notes/trustworthy-data"><span><strong>Trust is a data product</strong><small>Why reconciliation and shared definitions are part of the interface.</small></span><time>seedling · Aug 2026</time></a></li>
+  <li><a href="/notes/local-first-products"><span><strong>Local-first changes the shape of a product</strong><small>What Mouna taught me about evidence, ownership, and quiet software.</small></span><time>seedling · Aug 2026</time></a></li>
+  <li><a href="/projects/signal-atlas"><span><strong>Signal Atlas</strong><small>365 design-engineering resources, arranged around intent.</small></span><time>project · 2026</time></a></li>
+</ul>
 
 ## From the workbench
 

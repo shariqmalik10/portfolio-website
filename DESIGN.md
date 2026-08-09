@@ -14,13 +14,13 @@ colors:
 typography:
   landmark:
     fontFamily: "Fraunces, Georgia, serif"
-    fontSize: "clamp(1.65rem, 3.5vw, 2.15rem)"
+    fontSize: "clamp(1.45rem, 3vw, 1.85rem)"
     fontWeight: 600
     lineHeight: 1.2
     letterSpacing: "-0.025em"
   body:
     fontFamily: "Manrope, system-ui, sans-serif"
-    fontSize: "1.04rem"
+    fontSize: "0.96rem"
     fontWeight: 400
     lineHeight: 1.75
   welcome:
@@ -30,9 +30,19 @@ typography:
     lineHeight: 1
   note:
     fontFamily: "Manrope, system-ui, sans-serif"
-    fontSize: "0.88rem"
+    fontSize: "0.82rem"
     fontWeight: 400
     lineHeight: 1.5
+  path:
+    fontFamily: "Fraunces, Georgia, serif"
+    fontSize: "1.03rem"
+    fontWeight: 600
+    lineHeight: 1.35
+  metadata:
+    fontFamily: "Caveat, Segoe Print, cursive"
+    fontSize: "0.94rem"
+    fontWeight: 600
+    lineHeight: 1.4
 spacing:
   xs: "0.3rem"
   sm: "1rem"
@@ -60,7 +70,7 @@ components:
 
 The site feels like a personal patch of the web rather than a formatted résumé. It borrows the quiet, literary rhythm of jzhao.xyz—serif landmarks, handwritten marginalia, warm paper, and conversational hyperlinks—while keeping Shariq’s own navy/rust palette and an abstract window of leaves and light.
 
-**Key characteristics:** one generous reading column, sparse interface chrome, links embedded in prose, visible work only after a welcoming introduction, and notes that can remain unfinished.
+**Key characteristics:** one generous reading column, sparse interface chrome, links embedded in prose, a softly interactive pixel field, a wind-bent pixel flower, visible work only after a welcoming introduction, and notes that can remain unfinished.
 
 ## Colors
 
@@ -80,7 +90,7 @@ There are no cards or floating résumé surfaces. Depth comes from the framed ga
 
 ## Components
 
-Garden paths and recent notes are ruled lists, not cards. Internal links use a rust underline. Article metadata and backlinks remain quiet supporting context on inner pages.
+Garden paths and recent notes are compact botanical bullet trails, not cards. The banner is a canvas-rendered pixel flower with restrained wind motion; the page background carries a five-cell cursor trail that slowly dims. Both become still when reduced motion is requested. Internal links use a rust underline. Article metadata and backlinks remain quiet supporting context on inner pages.
 
 ## Do’s and Don’ts
 
