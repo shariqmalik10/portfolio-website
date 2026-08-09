@@ -1,70 +1,29 @@
-# Minimalist CV 
+# Shariq Malik's personal site
 
-Preview: [Click here to view website](https://shariq.vercel.app)
+A connected portfolio and technical fieldbook built with [Quartz 5](https://quartz.jzhao.xyz).
 
-Simple web app that renders minimalist CV with print-friendly layout.
+## Local development
 
-Built with Next.js and shadcn/ui, deployed on Vercel.
+Quartz requires Node.js 22+ and npm 10.9.2+.
 
-# Features
-
-- Setup only takes a few minutes [single config file](./src/data/resume-data.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/ui, TailwindCss
-- Auto generated Layout
-- Responsive for different devices
-- Optimized for Next.js and Vercel
-
-# Getting Started Locally
-
-1. Clone this repository to your local machine:
-
-   ```bash
-   git clone https://github.com/BartoszJarocki/cv.git
-   ```
-
-2. Move to the cloned directory
-
-   ```bash
-   cd cv
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   yarn install
-   ```
-
-4. Start the local Server:
-
-   ```bash
-   yarn dev
-   ```
-
-5. Open the [Config file](./src/data/resume-data.tsx) and make changes
-
-# Run with Docker
-
-Build the container
-
-```
-docker compose build
+```bash
+npm ci
+npx quartz plugin install
+npx quartz build --serve
 ```
 
-Run the container
+Content lives in [`content/`](content). Site configuration is in [`quartz.config.yaml`](quartz.config.yaml), and the custom visual layer is in [`quartz/styles/custom.scss`](quartz/styles/custom.scss).
 
-```
-docker compose up -d
-```
+## Production
 
-Stop the Container
+Vercel builds with:
 
-```
-docker compose down 
+```bash
+npx quartz plugin install && npx quartz build
 ```
 
-# License
+The static output is emitted to `public/`.
 
-[MIT](https://choosealicense.com/licenses/mit/)
+## Credits
 
-#Citation 
-The minimalist cv idea has been referred from : [BartoszJarocki](https://github.com/BartoszJarocki/cv)
+Built on Quartz by Jacky Zhao and its community contributors. Quartz is MIT licensed; see [`LICENSE.txt`](LICENSE.txt).

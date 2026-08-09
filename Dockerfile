@@ -1,22 +1,18 @@
-# Use the official lightweight Node.js 18 image.
-# https://hub.docker.com/_/node
-FROM node:18-slim
+FROM node:22-slim AS builder
 
-# Create and change to the app directory.
+# install git to install plugins
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /usr/src/app
+COPY package.json .
+COPY package-lock.json* .
+COPY .npmrc* .
+COPY quartz/ ./quartz/
+COPY quartz.lock.json* .
+RUN npm install; npx quartz plugin install
 
-# Copy application dependency manifests to the container image.
-# A wildcard is used to ensure both package.json AND package-lock.json are copied.
-COPY package*.json ./
-
-# Install all dependencies.
-RUN npm install
-
-# Copy local code to the container image.
+FROM node:22-slim
+WORKDIR /usr/src/app
+COPY --from=builder /usr/src/app/ /usr/src/app/
 COPY . .
-
-# Build the app
-RUN npm run build
-
-# Run the web service on container startup.
-CMD [ "npm", "start" ]
+CMD ["npx", "quartz", "build", "--serve"]
