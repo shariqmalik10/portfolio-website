@@ -1,65 +1,60 @@
 ---
 title: Shariq Malik
-description: Data engineer, analyst, and product-minded developer building reliable systems and useful software.
+description: A personal garden of data systems, small software, working notes, and things Shariq Malik is learning in public.
 tags:
   - home
 ---
 
-<div class="home-hero">
-  <p class="home-kicker">Shariq Nadeem Malik <span>·</span> Data &amp; Product Engineer</p>
-  <h1>Building the systems<br>behind <em>clear decisions.</em></h1>
-  <p class="home-lede">I work across data engineering, analytics, applied machine learning, and software products—turning messy inputs into systems people can trust and use.</p>
-  <div class="home-actions">
-    <a class="primary-action" href="/projects">Explore selected work <span aria-hidden="true">↗</span></a>
-    <a class="text-action" href="/about">About me</a>
-  </div>
+<div class="garden-window" aria-hidden="true">
+  <span class="garden-sun"></span>
+  <span class="garden-leaf leaf-one"></span>
+  <span class="garden-leaf leaf-two"></span>
+  <span class="garden-leaf leaf-three"></span>
+  <span class="garden-grid"></span>
 </div>
 
-<div class="current-note">
-  <span class="current-dot" aria-hidden="true"></span>
-  <p><strong>Currently:</strong> building analytics and data infrastructure at Karage, while exploring local-first apps and design-engineering tools in public.</p>
+<div class="garden-welcome">Welcome in.</div>
+
+<div class="garden-intro">
+
+I’m Shariq. This is my small patch of the internet—a place for the [[notes/index|notes]], [[projects/index|things]], and half-formed connections that grow around my work.
+
+Most days I build [[areas/data-engineering|data systems]] at Karage: pipelines, models, and reporting foundations that help people make clearer decisions. Outside work, I follow whatever feels worth making, from [[projects/mouna|a local-first grocery memory]] to [[projects/signal-atlas|a map of design-engineering resources]].
+
+I care about dependable systems, expressive software, and understanding a tool all the way down. This garden is where those interests are allowed to overlap.
+
 </div>
 
-## Selected work
+## A few paths through the garden
 
-<div class="featured-work">
-  <div class="work-rail"><span>2026</span><span>SwiftUI · SwiftData</span></div>
-  <div class="work-copy">
-    <p class="work-label">Featured product</p>
-    <h3><a href="/projects/mouna">Mouna — a spatial grocery memory</a></h3>
-    <p>A local-first iPhone and Mac app that turns grocery photographs into tactile pantry objects, tracks quantity and expiry, and keeps evidence attached to each item.</p>
-    <p class="work-proof">On-device capture · local persistence · 25 Swift source files · unit and UI test coverage</p>
-    <a class="work-link" href="https://github.com/shariqmalik10/whats-in-my-fridge">View source on GitHub ↗</a>
-  </div>
+<ul class="garden-paths">
+  <li><a href="/projects"><span>The workbench</span><small>products, data systems, and machine-learning experiments</small></a></li>
+  <li><a href="/notes"><span>The notebook</span><small>ideas about reliability, local-first software, and learning in public</small></a></li>
+  <li><a href="/now"><span>What is growing now</span><small>current work, questions, and side projects</small></a></li>
+  <li><a href="/about"><span>A note about me</span><small>background, values, and ways to say hello</small></a></li>
+</ul>
+
+## Recently tended
+
+<div class="garden-list">
+  <a href="/notes/trustworthy-data"><span><strong>Trust is a data product</strong><small>Why reconciliation and shared definitions are part of the interface.</small></span><time>seedling · Aug 2026</time></a>
+  <a href="/notes/local-first-products"><span><strong>Local-first changes the shape of a product</strong><small>What Mouna taught me about evidence, ownership, and quiet software.</small></span><time>seedling · Aug 2026</time></a>
+  <a href="/projects/signal-atlas"><span><strong>Signal Atlas</strong><small>365 design-engineering resources, arranged around intent.</small></span><time>project · 2026</time></a>
 </div>
 
-<div class="work-list">
-  <article class="work-row">
-    <div class="work-rail"><span>2026</span><span>React · TypeScript</span></div>
-    <div class="work-copy"><h3><a href="/projects/signal-atlas">Signal Atlas</a></h3><p>A searchable, contextual directory of 365 design-engineering resources, organized by purpose rather than hype.</p></div>
-  </article>
-  <article class="work-row">
-    <div class="work-rail"><span>2025—now</span><span>BigQuery · Airflow</span></div>
-    <div class="work-copy"><h3><a href="/projects/data-warehouse">Enterprise data warehouse</a></h3><p>Dimensional models and automated pipelines that bring CRM, finance, and operational data into a dependable reporting layer.</p></div>
-  </article>
-  <article class="work-row">
-    <div class="work-rail"><span>2024</span><span>LightGBM · Python</span></div>
-    <div class="work-copy"><h3><a href="/projects/loan-risk">Loan risk analysis</a></h3><p>An end-to-end analysis and model for repayment risk, documented with a 93.07% evaluation result in the public project.</p></div>
-  </article>
-</div>
+## From the workbench
 
-<p class="section-link"><a href="/projects">See all projects →</a></p>
+<p class="garden-prose">A few things I’m especially glad to have made:</p>
 
-## Follow a thread
+- [[projects/mouna|Mouna]] — a spatial, local-first grocery memory for Apple platforms.
+- [[projects/signal-atlas|Signal Atlas]] — a calmer way to find design-engineering resources.
+- [[projects/data-warehouse|An enterprise data warehouse]] — the less visible craft of making operational data dependable.
+- [[projects/neural-network|A neural network from scratch]] — learning the machinery by building it myself.
 
-This site is meant to be explored, not just scanned. Start with the part of the work that is most useful to you:
+There is more on the [[projects/index|workbench]], including the edges and limitations I can share honestly.
 
-<div class="thread-grid">
-  <a href="/areas/data-engineering"><strong>Data engineering</strong><span>Pipelines, warehouses, migration, and trustworthy reporting.</span></a>
-  <a href="/areas/applied-ml"><strong>Applied ML</strong><span>Risk, churn, computer vision, and learning from first principles.</span></a>
-  <a href="/areas/product-engineering"><strong>Product engineering</strong><span>Local-first software, APIs, and expressive interfaces.</span></a>
-</div>
+<div class="garden-signoff">— Shariq :)</div>
 
-## Elsewhere
+---
 
-Find the source behind this garden on [GitHub](https://github.com/shariqmalik10), connect on [LinkedIn](https://www.linkedin.com/in/shariq-malik10/), or [send an email](mailto:shariqnadeem21@hotmail.com). You can also [download the data engineering resume](/assets/shariq-malik-data-engineer-resume.pdf).
+<p class="garden-elsewhere">You can also find me on <a href="https://github.com/shariqmalik10">GitHub</a>, connect on <a href="https://www.linkedin.com/in/shariq-malik10/">LinkedIn</a>, <a href="mailto:shariqnadeem21@hotmail.com">send an email</a>, or <a href="/assets/shariq-malik-data-engineer-resume.pdf">download my résumé</a>.</p>

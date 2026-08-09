@@ -5,7 +5,7 @@ tags:
   - about
 ---
 
-I am a data engineer and analyst with a product-builder's curiosity. My day-to-day work sits where business questions, operational systems, and imperfect data meet: designing pipelines, models, and reporting foundations that make decisions easier to trust.
+Hello again. I am a data engineer and analyst with a product-builder's curiosity. My day-to-day work sits where business questions, operational systems, and imperfect data meet: designing pipelines, models, and reporting foundations that make decisions easier to trust.
 
 My public work ranges further. I have built [[projects/mouna|a local-first grocery memory for Apple platforms]], [[projects/signal-atlas|a searchable design-engineering atlas]], and machine-learning systems for [[projects/loan-risk|credit risk]], [[projects/customer-churn|customer churn]], computer vision, and neural-network fundamentals.
 
@@ -20,7 +20,7 @@ My public work ranges further. I have built [[projects/mouna|a local-first groce
 
 I earned a Bachelor of Computer Science, majoring in Data Science, from Monash University in 2023. Since then I have worked across research, insurance technology, and automotive SaaS. The longer version is in [[work/index|Experience]].
 
-## Get in touch
+## Leave a note
 
 - [Email](mailto:shariqnadeem21@hotmail.com)
 - [GitHub](https://github.com/shariqmalik10)

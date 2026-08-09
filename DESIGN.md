@@ -1,128 +1,97 @@
 ---
-name: Shariq Malik - Systems Fieldbook
-description: A precise, human technical fieldbook built on Quartz.
+name: Shariq Malik - Working Garden
+description: A warm, personal hypertext garden built on Quartz.
 colors:
-  paper: "#f6f7f2"
-  paper-raised: "#ffffff"
-  ink: "#1d2421"
-  ink-muted: "#5b6862"
-  rule: "#d8ded8"
-  signal-teal: "#12675f"
-  signal-coral: "#c75b35"
-  night: "#121714"
-  night-ink: "#ecf1ed"
+  paper: "#f5efe1"
+  paper-deep: "#e8deca"
+  ink: "#172b4d"
+  body: "#40506b"
+  faded: "#8b806d"
+  rust: "#bd5438"
+  sky: "#90a9c5"
+  leaf: "#536d59"
+  night: "#08172c"
 typography:
-  display:
-    fontFamily: "Schibsted Grotesk, system-ui, sans-serif"
-    fontSize: "clamp(3rem, 8vw, 6rem)"
-    fontWeight: 650
-    lineHeight: 0.94
-    letterSpacing: "-0.035em"
+  landmark:
+    fontFamily: "Fraunces, Georgia, serif"
+    fontSize: "clamp(1.65rem, 3.5vw, 2.15rem)"
+    fontWeight: 600
+    lineHeight: 1.2
+    letterSpacing: "-0.025em"
   body:
-    fontFamily: "Source Sans Pro, system-ui, sans-serif"
-    fontSize: "1.05rem"
+    fontFamily: "Manrope, system-ui, sans-serif"
+    fontSize: "1.04rem"
     fontWeight: 400
-    lineHeight: 1.68
-  label:
-    fontFamily: "IBM Plex Mono, monospace"
-    fontSize: "0.76rem"
-    fontWeight: 500
-    lineHeight: 1.4
-    letterSpacing: "0.04em"
-  lede:
-    fontFamily: "Source Sans Pro, system-ui, sans-serif"
-    fontSize: "clamp(1.1rem, 2.3vw, 1.35rem)"
+    lineHeight: 1.75
+  welcome:
+    fontFamily: "Caveat, Segoe Print, cursive"
+    fontSize: "clamp(2rem, 5vw, 2.8rem)"
+    fontWeight: 600
+    lineHeight: 1
+  note:
+    fontFamily: "Manrope, system-ui, sans-serif"
+    fontSize: "0.88rem"
     fontWeight: 400
-    lineHeight: 1.55
-  section:
-    fontFamily: "Schibsted Grotesk, system-ui, sans-serif"
-    fontSize: "clamp(1.75rem, 4vw, 2.45rem)"
-    fontWeight: 650
-    lineHeight: 1.1
-  title:
-    fontFamily: "Schibsted Grotesk, system-ui, sans-serif"
-    fontSize: "clamp(1.35rem, 3vw, 1.9rem)"
-    fontWeight: 650
-    lineHeight: 1.15
-  body-small:
-    fontFamily: "Source Sans Pro, system-ui, sans-serif"
-    fontSize: "0.92rem"
-    fontWeight: 400
-    lineHeight: 1.45
-  display-mobile:
-    fontFamily: "Schibsted Grotesk, system-ui, sans-serif"
-    fontSize: "clamp(2.65rem, 14vw, 4rem)"
-    fontWeight: 650
-    lineHeight: 0.94
-    letterSpacing: "-0.035em"
-rounded:
-  focus: "4px"
-  control: "6px"
-  thread: "10px"
-  surface: "14px"
+    lineHeight: 1.5
 spacing:
-  xs: "0.5rem"
-  sm: "0.875rem"
+  xs: "0.3rem"
+  sm: "1rem"
   md: "1.5rem"
   lg: "3rem"
-  xl: "6rem"
+  xl: "4rem"
+rounded:
+  focus: "3px"
 components:
-  action-primary:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.paper}"
-    rounded: "{rounded.control}"
-    padding: "0.8rem 1rem"
-  project-surface:
-    backgroundColor: "{colors.paper-raised}"
+  garden-window:
+    backgroundColor: "{colors.sky}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.surface}"
-    padding: "1.5rem"
+    padding: "0"
+  garden-path:
+    backgroundColor: "transparent"
+    textColor: "{colors.body}"
+    padding: "1rem 0"
 ---
 
-# Design System: Systems Fieldbook
+# Design System: Working Garden
 
 ## Overview
 
-**Creative North Star: "The Systems Fieldbook"**
+**Creative North Star: “The Working Garden”**
 
-The site feels like a carefully maintained working notebook: calm enough for long-form reading, structured enough to scan, and specific enough to feel authored. It inherits Quartz's information architecture and jzhao.xyz's open-garden invitation, then sharpens the first viewport around Shariq's own work.
+The site feels like a personal patch of the web rather than a formatted résumé. It borrows the quiet, literary rhythm of jzhao.xyz—serif landmarks, handwritten marginalia, warm paper, and conversational hyperlinks—while keeping Shariq’s own navy/rust palette and an abstract window of leaves and light.
 
-**Key Characteristics:** restrained paper surfaces, crisp ink typography, teal links, coral moments of emphasis, exposed relationships, editorial rows instead of card grids.
+**Key characteristics:** one generous reading column, sparse interface chrome, links embedded in prose, visible work only after a welcoming introduction, and notes that can remain unfinished.
 
 ## Colors
 
-Light mode evokes a fieldbook read in daylight; dark mode is a quiet workstation surface. Teal is the navigational signal and coral is reserved for small status moments.
+Warm paper and navy ink make the site feel printed and lived-in. Rust is the second ink for underlines, focus, and handwritten moments. Sky and leaf tones appear only in the garden window.
 
 ## Typography
 
-Schibsted Grotesk carries direct, compact display text. Source Sans Pro keeps technical prose highly readable. IBM Plex Mono is reserved for dates, tags, and system labels rather than used as a technical costume.
+Fraunces gives headings a literary, slightly irregular character. Manrope keeps long technical notes clear. Caveat is reserved for welcomes, dates, and signoffs so the handwritten layer stays rare.
 
 ## Layout
 
-Quartz's three-column desktop frame stays intact for graph and explorer context. The article column uses a 68ch reading measure. The home route expands its internal compositions with deliberate full-width moments, collapsing to one column below 800px.
+Quartz keeps its wide desktop frame, but the persistent explorer and graph are removed. The left rail contains only identity, search, and theme controls. The center stays within a 46rem reading measure, expanding to 52rem on the home route. Below 800px everything becomes a contained single column.
 
 ## Elevation & Depth
 
-The system is flat by default. Tonal changes and fine rules create structure; shadows appear only on one featured project surface and interactive popovers.
-
-## Shapes
-
-Controls use 6px corners. The single featured project surface uses 14px corners. Ordinary content is not boxed.
+There are no cards or floating résumé surfaces. Depth comes from the framed garden window, paper tones, fine rules, and generous whitespace.
 
 ## Components
 
-Project entries are editorial rows with a date/role rail, title, evidence-led summary, and text link. The featured entry earns a larger surface. Links underline on hover, and every interactive element has a visible offset focus ring.
+Garden paths and recent notes are ruled lists, not cards. Internal links use a rust underline. Article metadata and backlinks remain quiet supporting context on inner pages.
 
-## Do's and Don'ts
+## Do’s and Don’ts
 
 ### Do:
 
-- **Do** keep claims concrete and linked to public artifacts where possible.
-- **Do** preserve generous reading rhythm and obvious keyboard focus.
-- **Do** let the graph, backlinks, and project connections communicate technical breadth.
+- Let personal voice and internal links carry navigation.
+- Keep notes visibly provisional through small maturity labels.
+- Make factual work evidence available deeper in the garden.
 
-### Don't:
+### Don’t:
 
-- **Don't** turn the homepage into a metric strip or equal-sized card grid.
-- **Don't** use gradients, decorative glass, or generic technology icon tiles.
-- **Don't** publish private contact details or imply public source exists for employer systems.
+- Reintroduce a giant professional headline, CTA pair, metric strip, or project-card grid.
+- Keep graph, explorer, and reader controls visible merely because Quartz provides them.
+- Copy Jacky Zhao’s content, custom shader, or exact visual assets.

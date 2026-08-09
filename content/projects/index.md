@@ -1,11 +1,11 @@
 ---
-title: Projects
-description: Selected public products, data systems, and machine-learning work by Shariq Malik.
+title: The workbench
+description: Selected products, data systems, and machine-learning experiments by Shariq Malik.
 tags:
   - projects
 ---
 
-These are selected systems and experiments across product engineering, data, and machine learning. Public work links to source; employer work is intentionally described without proprietary implementation detail.
+This is where the more finished things live: useful products, data systems, and experiments built to understand an idea more deeply. Public work links to source; employer work is described without proprietary implementation detail.
 
 ## Products
 
@@ -22,4 +22,4 @@ These are selected systems and experiments across product engineering, data, and
 - [[customer-churn|Customer churn predictor]] — behavioral churn modelling with XGBoost and Bayesian optimization.
 - [[neural-network|Neural network from scratch]] — a learning-oriented Python library for the fundamentals.
 
-More experiments live on [GitHub](https://github.com/shariqmalik10?tab=repositories).
+The workbench is never quite clear. More experiments—and a few abandoned directions—live on [GitHub](https://github.com/shariqmalik10?tab=repositories).

@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: Shariq Malik
-  pageTitleSuffix: " · Data, systems, and experiments"
+  pageTitleSuffix: " · a garden of data, software, and notes"
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -16,30 +16,30 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Fraunces
+      body: Manrope
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#f6f7f2"
-        lightgray: "#d8ded8"
-        gray: "#89938e"
-        darkgray: "#5b6862"
-        dark: "#1d2421"
-        secondary: "#12675f"
-        tertiary: "#c75b35"
-        highlight: rgba(18, 103, 95, 0.12)
-        textHighlight: "#f1d56b88"
+        light: "#f5efe1"
+        lightgray: "#ded4bf"
+        gray: "#8b806d"
+        darkgray: "#40506b"
+        dark: "#172b4d"
+        secondary: "#274f7a"
+        tertiary: "#bd5438"
+        highlight: rgba(189, 84, 56, 0.11)
+        textHighlight: "#e8bd5288"
       darkMode:
-        light: "#121714"
-        lightgray: "#2a332e"
-        gray: "#718078"
-        darkgray: "#bdc8c1"
-        dark: "#ecf1ed"
-        secondary: "#78c7b7"
-        tertiary: "#ff9b68"
-        highlight: rgba(120, 199, 183, 0.14)
-        textHighlight: "#947e2488"
+        light: "#08172c"
+        lightgray: "#172b48"
+        gray: "#7890b0"
+        darkgray: "#c9daf1"
+        dark: "#f1f5fb"
+        secondary: "#91b5dc"
+        tertiary: "#ef7856"
+        highlight: rgba(239, 120, 86, 0.14)
+        textHighlight: "#a8643f66"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -73,6 +73,7 @@ plugins:
     layout:
       position: right
       priority: 30
+      condition: not-index
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
@@ -99,7 +100,7 @@ plugins:
     enabled: false
     order: 92
   - source: "@quartz-community/quartz-fonts"
-    enabled: true
+    enabled: false
   - source: "@quartz-themes/core"
     enabled: false
     options:
@@ -148,12 +149,12 @@ plugins:
   - source: "@quartz-community/tag-page"
     enabled: true
   - source: "@quartz-community/explorer"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 50
   - source: "@quartz-community/graph"
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 10
@@ -163,13 +164,12 @@ plugins:
       position: left
       priority: 20
       group: toolbar
-      groupOptions:
-        grow: true
   - source: "@quartz-community/backlinks"
     enabled: true
     layout:
       position: right
       priority: 50
+      condition: not-index
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
@@ -192,6 +192,9 @@ plugins:
     layout:
       position: left
       priority: 10
+      group: toolbar
+      groupOptions:
+        grow: true
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
@@ -199,7 +202,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: "@quartz-community/reader-mode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -231,7 +234,7 @@ plugins:
   - source: "@quartz-community/recent-notes"
     enabled: false
   - source: "@quartz-community/spacer"
-    enabled: true
+    enabled: false
     options: {}
     order: 25
     layout:
@@ -251,7 +254,7 @@ plugins:
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5

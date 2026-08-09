@@ -24,7 +24,7 @@ The site is authored in Markdown, built with Quartz 5, versioned with Git, and d
 
 ## Capabilities and Constraints
 
-- Preserve Quartz search, graph view, backlinks, responsive reading, and dark mode.
+- Preserve Quartz search, backlinks, responsive reading, and dark mode. Keep graph and explorer data available to Quartz, but do not make those utilities permanent visual furniture.
 - Use only public or resume-supported facts. Employer systems are described without disclosing private implementation details.
 - Publish email, GitHub, and LinkedIn; do not publish the phone number found in an older portfolio repository.
 - Hosting uses the existing Vercel-connected portfolio repository at `shariq.vercel.app`.
@@ -45,7 +45,7 @@ The site is authored in Markdown, built with Quartz 5, versioned with Git, and d
 
 ## Product Principles
 
-- Lead with shipped work, not self-description.
+- Lead with a human welcome and connected interests; let shipped work appear naturally within the garden.
 - Make every claim traceable to a resume or public artifact.
 - Reward exploration without making basic navigation mysterious.
 - Keep the site useful as both a portfolio today and a growing knowledge garden later.

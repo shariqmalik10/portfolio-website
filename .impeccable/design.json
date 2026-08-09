@@ -1,188 +1,69 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-10T00:00:00+03:00",
-  "title": "Design System: Systems Fieldbook",
+  "generatedAt": "2026-08-10T01:30:00+03:00",
+  "title": "Design System: Working Garden",
   "extensions": {
     "colorMeta": {
-      "paper": {
-        "role": "neutral",
-        "displayName": "Field Paper",
-        "canonical": "#f6f7f2",
-        "tonalRamp": [
-          "#20231f",
-          "#3e433d",
-          "#626960",
-          "#8c948a",
-          "#b9c0b7",
-          "#d8ddd6",
-          "#eef0eb",
-          "#f6f7f2"
-        ]
-      },
-      "ink": {
-        "role": "neutral",
-        "displayName": "Working Ink",
-        "canonical": "#1d2421",
-        "tonalRamp": [
-          "#111512",
-          "#1d2421",
-          "#36413b",
-          "#536158",
-          "#76847b",
-          "#a4aea7",
-          "#d4dad6",
-          "#eef1ef"
-        ]
-      },
-      "signal-teal": {
-        "role": "primary",
-        "displayName": "Signal Teal",
-        "canonical": "#12675f",
-        "tonalRamp": [
-          "#08211f",
-          "#0b3935",
-          "#0e504b",
-          "#12675f",
-          "#2f887e",
-          "#67afa4",
-          "#add8d1",
-          "#e5f4f1"
-        ]
-      },
-      "signal-coral": {
-        "role": "secondary",
-        "displayName": "Margin Coral",
-        "canonical": "#c75b35",
-        "tonalRamp": [
-          "#35130a",
-          "#612516",
-          "#923c23",
-          "#c75b35",
-          "#dd7b59",
-          "#eda68d",
-          "#f7d1c3",
-          "#fcedea"
-        ]
-      }
+      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#f5efe1" },
+      "ink": { "role": "primary", "displayName": "Garden Ink", "canonical": "#172b4d" },
+      "rust": { "role": "secondary", "displayName": "Rust Underline", "canonical": "#bd5438" },
+      "leaf": { "role": "accent", "displayName": "Leaf", "canonical": "#536d59" }
     },
     "typographyMeta": {
-      "display": {
-        "displayName": "Fieldbook Display",
-        "purpose": "Homepage thesis and major section openings."
+      "landmark": { "displayName": "Serif Landmark", "purpose": "Page and section landmarks." },
+      "body": { "displayName": "Garden Prose", "purpose": "Conversational and technical reading." },
+      "welcome": {
+        "displayName": "Handwritten Note",
+        "purpose": "Rare welcomes, dates, and signoffs."
       },
-      "body": {
-        "displayName": "Reading Text",
-        "purpose": "Long-form project and experience content."
-      },
-      "label": {
-        "displayName": "System Label",
-        "purpose": "Dates, tags, technologies, and status."
-      },
-      "lede": {
-        "displayName": "Lead Paragraph",
-        "purpose": "The homepage scope statement."
-      },
-      "section": {
-        "displayName": "Section Heading",
-        "purpose": "Major content groups below the first viewport."
-      },
-      "title": {
-        "displayName": "Project Title",
-        "purpose": "Featured and listed work titles."
-      },
-      "body-small": {
-        "displayName": "Supporting Text",
-        "purpose": "Compact descriptions in thread links."
-      },
-      "display-mobile": {
-        "displayName": "Mobile Display",
-        "purpose": "The first-viewport thesis below 520px."
+      "note": {
+        "displayName": "Supporting Note",
+        "purpose": "Descriptions and garden maturity labels."
       }
     },
-    "shadows": [
-      {
-        "name": "featured-work",
-        "value": "0 18px 46px rgba(29, 36, 33, 0.09)",
-        "purpose": "The single featured project surface on the home route."
-      }
-    ],
+    "shadows": [],
     "motion": [
-      {
-        "name": "direct-ease",
-        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
-        "purpose": "Primary action response."
-      },
-      {
-        "name": "status-pulse",
-        "value": "2800ms ease-out",
-        "purpose": "One subtle authored moment on the current-work signal."
-      }
+      { "name": "link-color", "value": "150ms ease", "purpose": "Quiet feedback on garden paths." }
     ],
     "breakpoints": [
-      { "name": "compact", "value": "520px" },
+      { "name": "compact", "value": "560px" },
       { "name": "single-column", "value": "800px" }
     ]
   },
   "components": [
     {
-      "name": "Primary Action",
-      "kind": "button",
-      "refersTo": "action-primary",
-      "description": "The one solid action in the first viewport.",
-      "html": "<a class=\"ds-primary\" href=\"#\">Explore selected work <span>↗</span></a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;padding:13px 16px;color:#f6f7f2;background:#1d2421;border-radius:6px;text-decoration:none;font:600 16px 'Source Sans Pro',sans-serif;transition:transform 180ms cubic-bezier(.22,1,.36,1),box-shadow 180ms ease}.ds-primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(29,36,33,.16)}.ds-primary:focus-visible{outline:2px solid #c75b35;outline-offset:4px}"
-    },
-    {
-      "name": "Text Action",
-      "kind": "button",
-      "description": "Secondary navigation that remains visually part of the prose.",
-      "html": "<a class=\"ds-text-action\" href=\"#\">About me</a>",
-      "css": ".ds-text-action{color:#12675f;font:600 16px 'Source Sans Pro',sans-serif;text-underline-offset:.18em;text-decoration-thickness:1px}.ds-text-action:hover{color:#1d2421}.ds-text-action:focus-visible{outline:2px solid #c75b35;outline-offset:4px}"
-    },
-    {
-      "name": "Featured Project",
-      "kind": "card",
-      "refersTo": "project-surface",
-      "description": "The only raised content surface, reserved for the strongest current public product.",
-      "html": "<article class=\"ds-feature\"><small>2026 · SWIFTUI</small><h3>Mouna</h3><p>A local-first spatial grocery memory.</p></article>",
-      "css": ".ds-feature{max-width:560px;padding:24px;background:#fff;color:#1d2421;border-radius:14px;box-shadow:0 18px 46px rgba(29,36,33,.09)}.ds-feature small{color:#c75b35;font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.04em}.ds-feature h3{margin:12px 0 6px;font:650 28px 'Schibsted Grotesk',sans-serif;letter-spacing:-.02em}.ds-feature p{margin:0;color:#5b6862;font:400 17px/1.55 'Source Sans Pro',sans-serif}"
-    },
-    {
-      "name": "Thread Link",
+      "name": "Garden Path",
       "kind": "nav",
-      "description": "A route into one connected area of practice.",
-      "html": "<a class=\"ds-thread\" href=\"#\"><strong>Data engineering</strong><span>Pipelines, warehouses, migration, and trustworthy reporting.</span></a>",
-      "css": ".ds-thread{display:flex;flex-direction:column;gap:10px;padding:20px;color:#1d2421;background:#f6f7f2;border:1px solid #d8ded8;border-radius:10px;text-decoration:none;font-family:'Source Sans Pro',sans-serif}.ds-thread span{color:#5b6862;font-size:15px;line-height:1.45}.ds-thread:hover{background:rgba(18,103,95,.12)}.ds-thread:focus-visible{outline:2px solid #c75b35;outline-offset:4px}"
+      "description": "A calm ruled route to another part of the garden.",
+      "html": "<a class=\"garden-path\" href=\"#\"><span>The notebook</span><small>working notes and connections</small></a>",
+      "css": ".garden-path{display:grid;grid-template-columns:minmax(9.5rem,.65fr) 1fr;gap:1rem;padding:1rem 0;border-bottom:1px solid #ded4bf;text-decoration:none}"
     },
     {
-      "name": "Search Field",
-      "kind": "input",
-      "description": "Quartz search, expressed with the same paper, rule, and signal colors.",
-      "html": "<input class=\"ds-search\" type=\"search\" placeholder=\"Search the garden\">",
-      "css": ".ds-search{width:100%;min-height:44px;padding:10px 12px;color:#1d2421;background:#fff;border:1px solid #d8ded8;border-radius:6px;font:400 16px 'Source Sans Pro',sans-serif}.ds-search:focus{border-color:#12675f;outline:2px solid rgba(18,103,95,.18);outline-offset:2px}.ds-search::placeholder{color:#5b6862}"
+      "name": "Garden Window",
+      "kind": "hero",
+      "description": "One abstract, code-native scene of leaves and light that establishes place without behaving like a portfolio banner.",
+      "html": "<div class=\"garden-window\" aria-hidden=\"true\"></div>",
+      "css": ".garden-window{height:13rem;background:#90a9c5;border:2px solid #172b4d;overflow:hidden}"
     }
   ],
   "narrative": {
-    "northStar": "The Systems Fieldbook",
-    "overview": "The site feels like a carefully maintained working notebook: calm enough for long-form reading, structured enough to scan, and specific enough to feel authored. It inherits Quartz's information architecture and jzhao.xyz's open-garden invitation, then sharpens the first viewport around Shariq's own work.",
+    "northStar": "The Working Garden",
+    "overview": "A warm personal hypertext space where notes, projects, and technical interests are allowed to overlap.",
     "keyCharacteristics": [
-      "Restrained paper surfaces",
-      "Crisp ink typography",
-      "Teal links",
-      "Coral moments of emphasis",
-      "Exposed relationships",
-      "Editorial rows instead of card grids"
+      "Warm paper and navy ink",
+      "Sparse navigation chrome",
+      "Conversational internal links",
+      "Serif landmarks",
+      "Rare handwritten marginalia"
     ],
     "rules": [],
     "dos": [
-      "Do keep claims concrete and linked to public artifacts where possible.",
-      "Do preserve generous reading rhythm and obvious keyboard focus.",
-      "Do let the graph, backlinks, and project connections communicate technical breadth."
+      "Keep paths conversational and easy to follow.",
+      "Let unfinished notes remain visibly provisional."
     ],
     "donts": [
-      "Don't turn the homepage into a metric strip or equal-sized card grid.",
-      "Don't use gradients, decorative glass, or generic technology icon tiles.",
-      "Don't publish private contact details or imply public source exists for employer systems."
+      "Do not turn the homepage back into a résumé summary.",
+      "Do not copy the reference garden's unique shader or content."
     ]
   }
 }
