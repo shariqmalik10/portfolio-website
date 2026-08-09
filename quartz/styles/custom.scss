@@ -409,6 +409,135 @@ article .garden-list a.internal:not(.tag-link) {
   font-size: 0.9rem;
 }
 
+.quotes-rail {
+  width: 100%;
+  min-width: 0;
+  max-height: calc(100vh - 8rem);
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--garden-rule) transparent;
+}
+
+.quotes-heading {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--garden-rule);
+}
+
+.quotes-mark {
+  color: var(--garden-rust);
+  font-family: var(--headerFont);
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.quotes-heading h2 {
+  margin: -0.15rem 0 0;
+  color: var(--garden-ink);
+  font-family: var(--headerFont);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.quotes-heading p {
+  margin: 0.12rem 0 0;
+  color: var(--garden-faded);
+  font-family: var(--garden-hand);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.quotes-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.quotes-list > li {
+  margin: 0;
+  border-bottom: 1px solid var(--garden-rule);
+}
+
+.quote-entry.internal {
+  display: block;
+  padding: 1rem 0;
+  color: var(--garden-body);
+  background: transparent;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.quotes-rail blockquote {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.quotes-rail blockquote::before {
+  content: none;
+}
+
+.quotes-rail blockquote p {
+  margin: 0;
+  color: var(--garden-ink);
+  font-family: var(--headerFont);
+  font-size: 0.96rem;
+  font-weight: 550;
+  line-height: 1.45;
+  transition: color 150ms ease;
+}
+
+.quote-entry:hover blockquote p {
+  color: var(--garden-rust);
+}
+
+.quote-entry footer {
+  padding: 0;
+  margin: 0.55rem 0 0;
+  color: var(--garden-faded);
+  font-family: var(--garden-hand);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  border: 0;
+}
+
+.quote-entry cite {
+  font-style: normal;
+}
+
+.quote-entry time {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--garden-faded);
+  font-family: var(--garden-hand);
+  font-size: 0.76rem;
+}
+
+.quote-source {
+  opacity: 0.88;
+}
+
+.quotes-more.internal {
+  display: inline-block;
+  padding: 0.9rem 0 0;
+  color: var(--garden-faded);
+  background: transparent;
+  border-radius: 0;
+  font-size: 0.82rem;
+  text-decoration: underline;
+  text-decoration-color: var(--garden-rust);
+  text-underline-offset: 0.22em;
+}
+
+.quotes-empty {
+  color: var(--garden-faded);
+  font-family: var(--garden-hand);
+  font-size: 0.9rem;
+}
+
 hr {
   height: 0;
   margin: 3rem auto;
@@ -516,6 +645,26 @@ footer {
   .backlinks {
     padding-left: 0;
     border-left: 0;
+  }
+
+  .quotes-rail {
+    max-height: none;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--garden-rule);
+  }
+
+  .quotes-heading {
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+  .quotes-rail {
+    max-height: none;
+    padding: 2.5rem 0 0;
+    margin-top: 2rem;
+    border-top: 1px solid var(--garden-rule);
   }
 }
 

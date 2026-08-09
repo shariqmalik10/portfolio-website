@@ -41,6 +41,14 @@ configuration:
         highlight: rgba(239, 120, 86, 0.14)
         textHighlight: "#a8643f66"
 plugins:
+  - source: ./plugins/quotes
+    enabled: true
+    options:
+      limit: 4
+      linkToMore: /quotes
+    layout:
+      position: right
+      priority: 5
   - source: "@quartz-community/created-modified-date"
     enabled: true
     options:

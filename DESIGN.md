@@ -43,6 +43,16 @@ typography:
     fontSize: "0.94rem"
     fontWeight: 600
     lineHeight: 1.4
+  marginalia:
+    fontFamily: "Caveat, Segoe Print, cursive"
+    fontSize: "0.76rem / 0.82rem / 0.88rem / 0.9rem"
+    fontWeight: 400
+    lineHeight: 1.4
+  quote:
+    fontFamily: "Fraunces, Georgia, serif"
+    fontSize: "0.96rem / 1.05rem"
+    fontWeight: 550
+    lineHeight: 1.45
 spacing:
   xs: "0.3rem"
   sm: "1rem"
@@ -82,7 +92,7 @@ Fraunces gives headings a literary, slightly irregular character. Manrope keeps 
 
 ## Layout
 
-Quartz keeps its wide desktop frame, but the persistent explorer and graph are removed. The left rail contains only identity, search, and theme controls. The center stays within a 46rem reading measure, expanding to 52rem on the home route. Below 800px everything becomes a contained single column.
+Quartz keeps its wide desktop frame, but the persistent explorer and graph are removed. The left rail contains only identity, search, and theme controls. The center stays within a 46rem reading measure, expanding to 52rem on the home route. A restrained quote notebook occupies the homepage’s right rail on desktop and follows the article at narrower widths. Below 800px everything becomes a contained single column.
 
 ## Elevation & Depth
 
@@ -90,7 +100,7 @@ There are no cards or floating résumé surfaces. Depth comes from the framed ga
 
 ## Components
 
-Garden paths and recent notes are compact botanical bullet trails, not cards. The banner is a canvas-rendered pixel flower with restrained wind motion; the page background carries a five-cell cursor trail that slowly dims. Both become still when reduced motion is requested. Internal links use a rust underline. Article metadata and backlinks remain quiet supporting context on inner pages.
+Garden paths and recent notes are compact botanical bullet trails, not cards. The quote rail is a ruled marginal list populated from Markdown frontmatter, with the newest collected lines first. The banner is a canvas-rendered pixel flower with restrained wind motion; the page background carries a five-cell cursor trail that slowly dims. Both become still when reduced motion is requested. Internal links use a rust underline. Article metadata and backlinks remain quiet supporting context on inner pages.
 
 ## Do’s and Don’ts
 
